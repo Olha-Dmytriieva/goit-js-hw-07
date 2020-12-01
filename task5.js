@@ -1,11 +1,15 @@
 
 // const inputRef= document.getElementById('name-input')
-const inputRef = document.querySelector('input')
-const nameRef = document.getElementById('name-output')
+const inputRef = document.querySelector('input');
+const nameRef = document.getElementById('name-output');
+
+
 
 
 inputRef.addEventListener('input', e=>
 nameRef.textContent = e.target.value
+
+
 )
 
 

@@ -1,18 +1,23 @@
 
 const validationRef = document.getElementById('validation-input')
 
-const inputRef = document.querySelector('input')
+const inputEl = document.querySelector('.task6')
 
 
-inputRef.addEventListener('change', (e) => {
+inputEl.addEventListener('change', (e) => {
 
     if (validationRef.dataset.length == e.target.value.length){
             validationRef.classList.toggle('valid')
     }
-     else if (validationRef.dataset.length !== e.target.value.length){
+      if (validationRef.dataset.length !== e.target.value.length){
         validationRef.classList.toggle('invalid')
      }
-     else  validationRef.classList.remove('valid')
+     if (validationRef.dataset.length === "0"){
+         validationRef.classList.remove('valid');   
+         validationRef.classList.remove('invalid');
+     }
+     
+     
 } 
 
 

@@ -1,6 +1,13 @@
 
 .pictures{
-display: inline-flex;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.items{
+  border-color: aquamarine;
+  border-style: groove;
+  margin: 15px;
 }
 
 

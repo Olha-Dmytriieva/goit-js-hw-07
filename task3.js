@@ -22,13 +22,14 @@ const images = [
 
 
 const insertToDoc = document.querySelector('#gallery')
-insertToDoc.classList.add(".pictures")
+
 
 const htmlCode = function(arr){
 
   for(const item of arr){
 
   const liEl = document.createElement('li');
+  liEl.classList.add("items")
   const imgEl = document.createElement('img')
 
   liEl.appendChild(imgEl)
@@ -49,6 +50,7 @@ const htmlCode = function(arr){
 
 console.log(htmlCode (images))
 
+insertToDoc.classList.add("pictures");
 
 
 
