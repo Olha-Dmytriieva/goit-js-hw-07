@@ -8,15 +8,7 @@ const ingredients = [
     'Приправы',
   ];
 
-// const insertToDoc = document.querySelector('#ingredients')
-// const elementsCreation = document.createElement('li')
-// console.log(ingredients)
-// console.log(elementsCreation)
 
-// const innerText = ingredients.map(item=> console.log(elementsCreation.appendChild((item))))
-
-// // .forEach((el, idx) => console.log(elementsCreation.append(el))))
-// console.log(innerText)
 
 const insertToDoc = document.querySelector('#ingredients')
 

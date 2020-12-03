@@ -28,17 +28,17 @@ const htmlCode = function(arr){
 
   for(const item of arr){
 
-  const liEl = document.createElement('li');
-  liEl.classList.add("items")
+  const liElement = document.createElement('li');
+  liElement.classList.add("items")
   const imgEl = document.createElement('img')
 
-  liEl.appendChild(imgEl)
+  liElement.appendChild(imgEl)
   
   imgEl.src = item.url
   imgEl.alt = item.alt
   imgEl.width = 500;
 
-  insertToDoc.appendChild(liEl)
+  insertToDoc.appendChild(liElement)
   // console.log(liEl)
   
   }
