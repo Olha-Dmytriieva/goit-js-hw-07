@@ -7,7 +7,7 @@ const nameRef = document.getElementById('name-output');
 
 
 inputRef.addEventListener('input', e=>
-nameRef.textContent = e.target.value
+nameRef.textContent = e.target.value.trim()
 
 
 )

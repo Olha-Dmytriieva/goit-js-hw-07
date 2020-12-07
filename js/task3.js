@@ -24,33 +24,57 @@ const images = [
 const insertToDoc = document.querySelector('#gallery')
 
 
-const htmlCode = function(arr){
+// const htmlCode = function(arr){
 
-  for(const item of arr){
+//   for(const item of arr){
+
+//   const liElement = document.createElement('li');
+//   liElement.classList.add("items")
+//   const imgEl = document.createElement('img')
+
+//   liElement.appendChild(imgEl)
+  
+//   imgEl.src = item.url
+//   imgEl.alt = item.alt
+//   imgEl.width = 500;
+
+//   insertToDoc.appendChild(liElement)
+//   // console.log(liEl)
+  
+//   }
+  
+
+// }
+
+// console.log(htmlCode (images))
+
+// insertToDoc.classList.add("pictures");
+
+
+const htmlCode = images.map(pic =>{
 
   const liElement = document.createElement('li');
   liElement.classList.add("items")
   const imgEl = document.createElement('img')
 
   liElement.appendChild(imgEl)
-  
-  imgEl.src = item.url
-  imgEl.alt = item.alt
-  imgEl.width = 500;
+  // console.log(pic.url)
 
-  insertToDoc.appendChild(liElement)
-  // console.log(liEl)
-  
-  }
-  
+    imgEl.src = pic.url
+    imgEl.alt = pic.alt
+    imgEl.width = 500;
 
-  
+    // console.log(imgEl)
+
+    insertToDoc.appendChild(liElement);
+
 
 }
-
-console.log(htmlCode (images))
+    
+)
 
 insertToDoc.classList.add("pictures");
+
 
 
 
